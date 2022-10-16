@@ -85,7 +85,7 @@ def main(
         [
             transforms.Resize(2 * IMAGE_SIZE),
             transforms.CenterCrop(2 * IMAGE_SIZE),
-            transforms.CenterCrop(IMAGE_SIZE),
+            #transforms.CenterCrop(IMAGE_SIZE),
             transforms.RandomAutocontrast(),
             transforms.RandomHorizontalFlip(p=0.5),
             transforms.ToTensor(),
